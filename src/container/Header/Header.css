@@ -1,15 +1,75 @@
-.app__header{
+.app__header {
     background-color: var(--color-black);
 }
-.app__header-h1{
+
+.app__header-h1 {
     font-family: var(--font-base);
     color: var(--color-golden);
     letter-spacing: 0.04em;
     text-transform: uppercase;
     line-height: 117px;
     font-size: 90px;
-
 }
-.app__header-img img{
+
+.app__header-img img {
     width: 80%;
+}
+
+@media screen and (max-width: 1050px) {
+    .app__header {
+        flex-direction: column;
+    }
+
+    .app__header-h1 {
+        font-size: 72px;
+        line-height: 94px;
+    }
+
+    .app__header-content {
+        margin: 0 0 3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__header-h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .app__header-content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .app__header-content__input input,
+    .app__header-content__input button {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .app__header-img img {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .app__header-h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .app__header-content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .app__header-content__input input,
+    .app__header-content__input button {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .app__header-img img {
+        width: 60%;
+    }
 }

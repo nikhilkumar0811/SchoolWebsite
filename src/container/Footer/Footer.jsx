@@ -15,7 +15,6 @@ const Footer = () => (
       </div>
 
       <div className="app__footer-links_logo">
-        <img src={images.om2} alt="footer_logo" />
         <p className="p__opensans">
           &quot;Empowering minds and shaping futures with excellence in
           education since 2012.&quot;
